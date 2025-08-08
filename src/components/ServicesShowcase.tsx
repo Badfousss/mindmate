@@ -156,7 +156,7 @@ const ServicesShowcase = () => {
                 
                 {/* CTA Button */}
                 <Link to="/signup">
-                  <Button className={`w-full bg-gradient-to-r ${service.color} text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-bold rounded-xl py-3`}>
+                  <Button className={`w-full bg-gradient-to-r ${service.color} text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-bold rounded-xl py-3 flex items-center justify-center`}>
                     <span className="flex items-center space-x-2">
                       <span>Try Now</span>
                       <ArrowRight className="w-4 h-4" />

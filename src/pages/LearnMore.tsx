@@ -172,7 +172,7 @@ const LearnMore = () => {
         <div className="relative z-10">
           <Navigation />
           
-          <div className="pt-20 pb-16">
+          <div className="pt-32 pb-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Hero Section */}
               <div className="text-center mb-20 space-y-8">

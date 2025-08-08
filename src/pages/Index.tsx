@@ -26,7 +26,7 @@ const Index = () => {
           <Navigation />
           
           {/* Hero Slideshow Section with enhanced styling */}
-          <section className="pt-20 pb-8 relative">
+          <section className="pt-32 pb-8 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <HeroSlideshow />
             </div>
