@@ -2,59 +2,59 @@ import React from 'react';
 import { Star, Award, Trophy, Shield, Sparkles, CheckCircle } from 'lucide-react';
 
 const MediaBanners = () => {
-  const mediaLogos = [
+  const recognitionBadges = [
     {
-      name: "BBC",
-      logo: "BBC",
-      bgColor: "bg-red-600",
-      textColor: "text-white",
-      description: "Featured in BBC Future"
-    },
-    {
-      name: "CNBC",
-      logo: "CNBC",
+      name: "Industry Recognition",
+      logo: "★★★★★",
       bgColor: "bg-blue-600",
       textColor: "text-white",
-      description: "Top Mental Health Apps"
+      description: "Top-rated wellness platform"
     },
     {
-      name: "Forbes",
-      logo: "FORBES",
-      bgColor: "bg-gray-800",
+      name: "User Choice Award",
+      logo: "AWARD",
+      bgColor: "bg-purple-600",
       textColor: "text-white",
-      description: "Forbes Health 2024"
+      description: "Most loved mental health app"
     },
     {
-      name: "TechCrunch",
-      logo: "TechCrunch",
+      name: "Innovation Leader",
+      logo: "TECH",
       bgColor: "bg-green-600",
       textColor: "text-white",
-      description: "Startup Spotlight"
+      description: "AI wellness innovation"
+    },
+    {
+      name: "Excellence Badge",
+      logo: "BEST",
+      bgColor: "bg-orange-600",
+      textColor: "text-white",
+      description: "Excellence in mental health"
     }
   ];
 
   const achievements = [
     {
-      title: "Featured in Forbes Health 2024",
-      description: "Recognized as a leading mental health innovation",
+      title: "Industry Recognition Award",
+      description: "Recognized as a leading wellness innovation platform",
       icon: Award,
       color: "from-yellow-500 to-orange-600"
     },
     {
-      title: "CNBC's Top Mental Health Apps",
-      description: "Selected among the best wellness applications",
+      title: "User Choice Excellence",
+      description: "Selected by users as the best wellness application",
       icon: Trophy,
       color: "from-blue-500 to-indigo-600"
     },
     {
-      title: "BBC Future's Wellness Innovation",
-      description: "Highlighted for breakthrough AI therapy approach",
+      title: "Innovation Excellence Award",
+      description: "Recognized for breakthrough AI wellness approach",
       icon: Star,
       color: "from-purple-500 to-pink-600"
     },
     {
-      title: "TechCrunch Startup Spotlight",
-      description: "Featured for revolutionary mental health technology",
+      title: "Technology Excellence",
+      description: "Awarded for revolutionary wellness technology",
       icon: Sparkles,
       color: "from-green-500 to-emerald-600"
     }
@@ -80,29 +80,29 @@ const MediaBanners = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Trusted by{' '}
             <span className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Industry Leaders
+              Wellness Enthusiasts
             </span>
           </h2>
           
           <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
-            Our innovative approach to mental health has been recognized by top-tier media outlets 
-            and industry publications worldwide.
+            Our innovative approach to mental wellness has earned recognition and trust 
+            from users and wellness professionals worldwide.
           </p>
         </div>
 
-        {/* Enhanced Media Logos */}
+        {/* Enhanced Recognition Badges */}
         <div className="flex flex-wrap items-center justify-center gap-8 mb-16">
-          {mediaLogos.map((media, index) => (
+          {recognitionBadges.map((badge, index) => (
             <div 
               key={index}
               className="group relative"
             >
-              <div className={`${media.bgColor} ${media.textColor} px-8 py-6 rounded-2xl font-bold text-2xl tracking-wide hover:scale-110 transition-all duration-300 shadow-xl hover:shadow-2xl cursor-pointer`}>
-                {media.logo}
+              <div className={`${badge.bgColor} ${badge.textColor} px-8 py-6 rounded-2xl font-bold text-2xl tracking-wide hover:scale-110 transition-all duration-300 shadow-xl hover:shadow-2xl cursor-pointer`}>
+                {badge.logo}
               </div>
               <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="bg-gray-900 text-white text-xs px-3 py-1 rounded-full whitespace-nowrap shadow-lg">
-                  {media.description}
+                  {badge.description}
                 </div>
               </div>
             </div>
@@ -138,11 +138,11 @@ const MediaBanners = () => {
         <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-200/50">
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Industry Leaders Trust MindMate AI
+              Why Wellness Professionals Choose MindMate AI
             </h3>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto font-medium">
-              Our commitment to excellence, security, and evidence-based approaches has earned recognition 
-              from the world's most respected publications and organizations.
+              Our commitment to excellence, security, and evidence-based approaches has earned trust 
+              from wellness professionals and users worldwide.
             </p>
           </div>
           
@@ -151,8 +151,8 @@ const MediaBanners = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <h4 className="font-bold text-gray-900 mb-2 text-lg">HIPAA Compliant</h4>
-              <p className="text-gray-700 font-medium">Enterprise-grade security and privacy protection</p>
+              <h4 className="font-bold text-gray-900 mb-2 text-lg">Privacy Protected</h4>
+              <p className="text-gray-700 font-medium">Enterprise-grade security and data protection</p>
             </div>
             
             <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-200/50 shadow-lg">
